@@ -1,62 +1,266 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="uk">
 <head>
-    <meta charset="UTF-8">
-    <title>Luntik_exe</title>
-    <style>
-        body {
-            margin: 0;
-            height: 100vh;
-            background: #0e0e0e;
-            color: white;
-            font-family: Arial, sans-serif;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-        .card {
-            text-align: center;
-            background: #161616;
-            padding: 30px;
-            border-radius: 16px;
-            box-shadow: 0 0 20px rgba(0,0,0,0.6);
-            width: 320px;
-        }
-        .card img {
-            width: 220px;
-            height: 220px;
-            object-fit: cover;
-            border-radius: 50%;
-            margin-bottom: 20px;
-        }
-        .card h1 {
-            margin: 10px 0 20px 0;
-        }
-        .links a {
-            display: block;
-            margin: 10px 0;
-            padding: 10px;
-            text-decoration: none;
-            color: white;
-            background: #2a2a2a;
-            border-radius: 8px;
-            transition: 0.3s;
-        }
-        .links a:hover {
-            background: #444;
-        }
-    </style>
+<meta charset="UTF-8">
+<title>Курс створення сайтів і Lua</title>
+
+<style>
+body{
+    margin:0;
+    font-family: Arial;
+    background:#0f172a;
+    color:white;
+}
+
+header{
+    background:#1e293b;
+    padding:20px;
+    text-align:center;
+    font-size:28px;
+    font-weight:bold;
+}
+
+nav{
+    background:#111827;
+    padding:10px;
+    text-align:center;
+}
+
+nav a{
+    color:#38bdf8;
+    margin:10px;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+section{
+    padding:25px;
+    border-bottom:1px solid #1e293b;
+}
+
+h2{
+    color:#38bdf8;
+}
+
+pre{
+    background:#1e293b;
+    padding:15px;
+    border-radius:10px;
+    overflow:auto;
+}
+
+button{
+    padding:10px 20px;
+    background:#38bdf8;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+    margin-top:10px;
+}
+</style>
 </head>
+
 <body>
-    <div class="card">
-        <img src="https://i.postimg.cc/jjnCvrDT/Zima.jpg" alt="Моё фото">
-        <h1>Luntik_exe</h1>
-        <div class="links">
-            <a href="https://arizona-rp.com" target="_blank">Скачать игру</a>
-            <a href="https://steamcommunity.com/profiles/76561198783242654/" target="_blank">Steam аккаунт</a>
-            <a href="https://t.me/Luntik_exe1" target="_blank">Telegram канал</a>
-            <a href="#">Discord: luntik_exe</a>
-        </div>
-    </div>
+
+<header>Повний гайд: HTML + CSS + JavaScript + Lua 🚀</header>
+
+<nav>
+<a href="#html">HTML</a>
+<a href="#css">CSS</a>
+<a href="#js">JavaScript</a>
+<a href="#lua">Lua</a>
+</nav>
+
+<!-- HTML -->
+
+<section id="html">
+<h2>1️⃣ HTML — створення структури сайту</h2>
+
+<p>HTML створює основу сторінки.</p>
+
+<h3>Базова структура</h3>
+
+<pre>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;Мій сайт&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+    &lt;h1&gt;Заголовок&lt;/h1&gt;
+    &lt;p&gt;Текст сторінки&lt;/p&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>
+
+<h3>Приклад з картинкою та посиланням</h3>
+
+<pre>
+&lt;h2&gt;Про сайт&lt;/h2&gt;
+
+&lt;img src="image.jpg" width="200"&gt;
+
+&lt;a href="https://google.com"&gt;
+    Перейти на сайт
+&lt;/a&gt;
+</pre>
+
+</section>
+
+<!-- CSS -->
+
+<section id="css">
+<h2>2️⃣ CSS — оформлення сайту</h2>
+
+<h3>Зміна фону і тексту</h3>
+
+<pre>
+&lt;style&gt;
+body {
+    background:black;
+    color:white;
+}
+
+h1 {
+    color:cyan;
+}
+&lt;/style&gt;
+</pre>
+
+<h3>Стиль кнопки</h3>
+
+<pre>
+button {
+    background:blue;
+    color:white;
+    padding:10px;
+    border-radius:5px;
+}
+</pre>
+
+</section>
+
+<!-- JS -->
+
+<section id="js">
+<h2>3️⃣ JavaScript — логіка і дії</h2>
+
+<h3>Приклад кнопки з повідомленням</h3>
+
+<pre>
+&lt;button onclick="showMessage()"&gt;Натисни&lt;/button&gt;
+
+&lt;script&gt;
+function showMessage(){
+    alert("JavaScript працює!");
+}
+&lt;/script&gt;
+</pre>
+
+<button onclick="demo()">Перевірити JavaScript</button>
+
+<script>
+function demo(){
+    alert("Все працює!");
+}
+</script>
+
+<h3>Зміна тексту на сторінці</h3>
+
+<pre>
+&lt;p id="text"&gt;Старий текст&lt;/p&gt;
+&lt;button onclick="changeText()"&gt;Змінити&lt;/button&gt;
+
+&lt;script&gt;
+function changeText(){
+    document.getElementById("text").innerHTML = "Новий текст";
+}
+&lt;/script&gt;
+</pre>
+
+</section>
+
+<!-- LUA -->
+
+<section id="lua">
+<h2>4️⃣ Lua — початок написання скриптів</h2>
+
+<h3>Перша програма</h3>
+
+<pre>
+print("Hello, Lua!")
+</pre>
+
+<h3>Змінні</h3>
+
+<pre>
+number = 10
+text = "Привіт"
+
+print(number)
+print(text)
+</pre>
+
+<h3>Умова</h3>
+
+<pre>
+score = 50
+
+if score >= 60 then
+    print("Зараховано")
+else
+    print("Не зараховано")
+end
+</pre>
+
+<h3>Цикл</h3>
+
+<pre>
+for i = 1, 5 do
+    print(i)
+end
+</pre>
+
+<h3>Функція</h3>
+
+<pre>
+function add(a, b)
+    return a + b
+end
+
+result = add(5, 3)
+print(result)
+</pre>
+
+<h3>Приклад для MoonLoader</h3>
+
+<pre>
+script_name("Example Script")
+
+function main()
+    while true do
+        wait(0)
+        printStringNow("Скрипт працює", 1000)
+    end
+end
+</pre>
+
+</section>
+
+<section>
+<h2>5️⃣ Що вчити далі?</h2>
+
+<ul>
+<li>Flexbox (розміщення блоків)</li>
+<li>Адаптивний дизайн</li>
+<li>GitHub Pages</li>
+<li>Lua для конкретної гри</li>
+<li>Створення повного проєкту</li>
+</ul>
+
+</section>
+
 </body>
 </html>
